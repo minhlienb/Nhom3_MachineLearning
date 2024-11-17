@@ -2,11 +2,13 @@ from flask import Flask, render_template_string, request
 import pickle
 import pandas as pd
 import math
+import os  # Import os for environment variables
 
 # Load models
-with open("clf_fan_model.pkl", "rb") as fan_file:
+model_path = os.path.dirname(os.path.abspath(__file__))  # Get the current directory
+with open(os.path.join(model_path, "clf_fan_model.pkl"), "rb") as fan_file:
     clf_fan_loaded = pickle.load(fan_file)
-with open("clf_lamp_model.pkl", "rb") as lamp_file:
+with open(os.path.join(model_path, "clf_lamp_model.pkl"), "rb") as lamp_file:
     clf_lamp_loaded = pickle.load(lamp_file)
 
 # Initialize Flask app
@@ -124,6 +126,7 @@ def predict():
         lamp_prediction=lamp_prediction,
     )
 
-# Run app
-if __name__ == "__main__":
-    app.run(debug=True)
+# Entry point for Vercel
+def handler(event, context):
+    return app(event, context)
+
