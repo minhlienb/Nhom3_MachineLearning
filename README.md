@@ -2,7 +2,8 @@
 
 ## App Kiểm soát chuồng trại với cây quyết định
 
+- Cài đặt các thư viện cần thiết
 ```
-pip install Flask pandas
+pip install Flask pandas pickle5
 ```
 
