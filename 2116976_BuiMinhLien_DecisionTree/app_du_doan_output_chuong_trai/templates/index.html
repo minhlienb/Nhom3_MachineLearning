@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan and Lamp Prediction</title>
+</head>
+<body>
+    <h1>Fan and Lamp Prediction Form</h1>
+    <form id="predictionForm" method="post" action="/predict">
+        <label for="barn_temperature">Barn Temperature (10-36°C):</label>
+        <input type="number" id="barn_temperature" name="barn_temperature" min="10" max="45" step="0.1" value="{{ barn_temperature }}" required><br><br>
+
+        <label for="humidity">Humidity (20-99%):</label>
+        <input type="number" id="humidity" name="humidity" min="20" max="99" value="{{ humidity }}" required><br><br>
+
+        <label for="luminance">Luminance (2-400 cd/m²):</label>
+        <input type="number" id="luminance" name="luminance" min="2" max="400" value="{{ luminance }}" required><br><br>
+
+        <fieldset>
+            <legend>Weather</legend>
+            <label><input type="radio" name="weather" value="clear_sky" {% if weather == 'clear_sky' %}checked{% endif %}> Clear Sky</label>
+            <label><input type="radio" name="weather" value="scattered_clouds" {% if weather == 'scattered_clouds' %}checked{% endif %}> Scattered Clouds</label>
+            <label><input type="radio" name="weather" value="overcast" {% if weather == 'overcast' %}checked{% endif %}> Overcast</label>
+            <label><input type="radio" name="weather" value="light_rain" {% if weather == 'light_rain' %}checked{% endif %}> Light Rain</label>
+        </fieldset>
+        <br>
+
+        <label for="hour">Hour of Day (0-23):</label>
+        <input type="number" id="hour" name="hour" min="0" max="23" value="{{ hour }}" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if fan_prediction is not none and lamp_prediction is not none %}
+        <h2>Prediction Results:</h2>
+        <p><strong>Ventilation Fan:</strong> {{ fan_prediction }}</p>
+        <p><strong>Heating Lamp:</strong> {{ lamp_prediction }}</p>
+    {% endif %}
+</body>
+</html>
