@@ -1,6 +1,6 @@
 # Nhóm 3 - Các phương pháp học máy
 
-## App Kiểm soát chuồng trại với cây quyết định
+## App dự đoán Output kiểm soát chuồng trại với cây quyết định 2116976_BuiMinhLien
 
 - Cài đặt các thư viện cần thiết
 ```
