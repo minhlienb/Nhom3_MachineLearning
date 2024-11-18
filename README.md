@@ -6,7 +6,10 @@
 ### Để sử dụng app:
 - Cách 1: 
 
-    giải nén môi trường ảo venv đã cài đặt sẵn các thư viện cần thiết như Flask, Scikit learn và pandas trên python 3.12.7 trong file venv.zip
+    giải nén môi trường ảo venv đã cài đặt sẵn các thư viện cần thiết như Flask, Scikit learn và pandas trên python 3.12.7 trong file 
+    ```
+    2116976_BuiMinhLien_DecisionTree/app_du_doan_output_chuong_trai/venv.zip
+    ```
 ![alt text](image.png)
     chọn môi trường ảo
     ![alt text](image-1.png)
