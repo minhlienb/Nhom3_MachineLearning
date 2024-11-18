@@ -23,6 +23,6 @@
     ```
 
 #### Kết quả:
-- Sau khi chạy ứng dụng **app.py** ở **http://127.0.0.1:5000/**, kết quả sẽ được hiển thị như sau:
+- Sau khi chạy ứng dụng ***app.py*** ở **http://127.0.0.1:5000/**, kết quả sẽ được hiển thị như sau:
 
     ![Hình ảnh minh họa kết quả](image-2.png)
