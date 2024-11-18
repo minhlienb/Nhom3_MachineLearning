@@ -11,10 +11,9 @@
     2116976_BuiMinhLien_DecisionTree/app_du_doan_output_chuong_trai/venv.zip
     ```
 ![alt text](image.png)
-
-
     chọn môi trường ảo
-    ![alt text](image-1.png)
+
+![alt text](image-1.png)
 
 - Cách 2: Cài đặt các thư viện cần thiết
 ```
