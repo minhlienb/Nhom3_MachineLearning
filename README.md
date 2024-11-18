@@ -21,3 +21,8 @@
     ```
     pip install Flask pandas scikit-learn
     ```
+    
+#### Kết quả:
+- Sau khi chạy ứng dụng, kết quả đầu ra sẽ được hiển thị như sau:
+
+    ![Hình ảnh minh họa kết quả](image-2.png)
