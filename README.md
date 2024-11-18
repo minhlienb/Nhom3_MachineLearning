@@ -1,7 +1,7 @@
 # 👷🛠️Đang cập nhật - bổ sung ....
 # Nhóm 3 - Các phương pháp học máy
 
-## App dự đoán Output kiểm soát chuồng trại với cây quyết định 2116976_BuiMinhLien
+## 1. App dự đoán Output kiểm soát chuồng trại với cây quyết định 2116976_BuiMinhLien
 
 ### Để sử dụng app:
 - Cách 1: 
